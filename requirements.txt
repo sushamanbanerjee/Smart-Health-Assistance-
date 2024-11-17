@@ -1,6 +1,7 @@
---upgrade pip
+pip
 streamlit
 streamlit_option_menu
 google.generativeai
 pickle-mixin
 pickle
+sklearn
