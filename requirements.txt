@@ -2,5 +2,3 @@ streamlit
 streamlit_option_menu
 google.generativeai
 pickle
-altair==4.0
-sklearn
