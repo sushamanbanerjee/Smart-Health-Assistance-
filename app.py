@@ -1,6 +1,6 @@
 
 import os
-import pickle
+import joblib
 import streamlit as st
 from streamlit_option_menu import option_menu
 import google.generativeai as genai
@@ -19,11 +19,11 @@ working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # loading the saved models
 
-diabetes_model = pickle.load(open(f'{working_dir}/diabetes_model.sav', 'rb'))
+diabetes_model = joblib.load(open(f'{working_dir}/diabetes_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open(f'{working_dir}/heart_disease_model.sav', 'rb'))
+heart_disease_model = joblib.load(open(f'{working_dir}/heart_disease_model.sav', 'rb'))
 
-parkinsons_model = pickle.load(open(f'{working_dir}/parkinsons_model.sav', 'rb'))
+parkinsons_model = joblib.load(open(f'{working_dir}/parkinsons_model.sav', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
