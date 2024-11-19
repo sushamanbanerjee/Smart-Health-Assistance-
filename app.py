@@ -41,7 +41,8 @@ if selected == 'Home':
     st.title("chat with AI for any medical advice")
     prompt=st.text_input('Ask anything')
     if st.button('generate'):
-        response = model.generate_content(prompt)
+        sample_info="You are a vrtual doctor. Your responsibility is to guide the users with medical information and help them. Now answer their query."
+        response = model.generate_content(sample_info+" "+prompt)
         st.success(response.text)
     prompt1=st.text_input('details about an medicine(Just search the name)')
     if st.button('click'):
