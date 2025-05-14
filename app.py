@@ -5,7 +5,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyBod2xZ06H-E75Cr0wL5u03NL3Q-rw87Xo")
+genai.configure(api_key="AIzaSyDwvep7IlEbooGv-x-cEg8_EIidSn5fM7E")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Set page configuration
